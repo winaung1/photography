@@ -58,9 +58,9 @@ export const Swiper = () => {
           </div>
           <div className="flex items-center space-x-6 pt-4">
             <button onClick={handlePrev}>
-              <FaArrowLeft />
+              <FaArrowLeft className="text-3xl" />
             </button>
-            <button onClick={handleNext}>
+            <button className="text-3xl" onClick={handleNext}>
               <FaArrowRight />
             </button>
           </div>

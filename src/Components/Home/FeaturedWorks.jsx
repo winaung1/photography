@@ -63,11 +63,17 @@ export const FeaturedWorks = () => {
       <div className="relative z-10 max-w-7xl mx-auto">
         <h1 className="title text-4xl">FEATURED WORKS</h1>
         <div className="title flex flex-wrap items-center space-x-4 pt-2 opacity-70">
+            
           <h2 className="">VISIONS CAPTURED</h2>
+          <div className="flex items-center space-x-2">
           <div className="w-2 h-2 rounded-full bg-white" />
           <h2 className="">MOMENTS FROZEN</h2>
-          <div className="w-2 h-2 rounded-full bg-white" />
+          </div>
+          <div className="flex  space-x-2">
+
+          <div className="w-2 h-2 mt-2 rounded-full bg-white" />
           <h2 className="">STORIES TOLD THROUGH DANIEL'S LENS.</h2>
+          </div>
         </div>
         <div className="py-4">
           {images.map((image, index) => (

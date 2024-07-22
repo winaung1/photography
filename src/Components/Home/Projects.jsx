@@ -14,12 +14,12 @@ export const Projects = () => {
       </div>
       <div className="pt-4 grid grid-cols-3 gap-4">
         <img
-          className="rounded-xl object-cover col-span-1 row-span-1 h-60 w-full"
+          className="rounded-xl object-cover col-span-2 md:col-span-1 row-span-1 h-60 w-full"
           src="https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg"
           alt="Project 1"
         />
         <img
-          className="rounded-xl object-cover col-span-1 row-span-1 h-60 w-full"
+          className="rounded-xl object-cover col-span-2 md:col-span-1 row-span-1 h-60 w-full"
           src="https://images.pexels.com/photos/1761279/pexels-photo-1761279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt="Project 2"
         />
