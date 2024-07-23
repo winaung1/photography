@@ -10,7 +10,7 @@ import { Projects } from "../Components/Home/Projects";
 export const Home = () => {
   return (
     <div>
-      <div className="py-14  bg-[#121212] text-white">
+      <div className="py-14  bg-dark text-white">
         <Banner />
         <Swiper />
       </div>

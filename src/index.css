@@ -12,6 +12,9 @@
   .green{
     color: #DDF247
   }
+  .bg-green{
+    background-color: #DDF247
+  }
   
   .border-green{
     border-bottom: 1px solid #DDF247;
@@ -20,7 +23,9 @@
   body{
     overflow-x: hidden;
   }
-
+.bg-dark{
+  background-color:#121212 ;
+}
   /* Hide scrollbar for Chrome, Safari and Opera */
 .hide-scrollbar::-webkit-scrollbar {
   display: none;

@@ -34,11 +34,11 @@ export const Testimonials = () => {
   const { text, company, name, position, image } = testimonials[currentIndex];
 
   return (
-    <div className="bg-[#121212] text-white py-14 px-4 relative">
+    <div className="bg-dark text-white py-14 px-4 relative">
       <div className="md:flex md:space-x-4 justify-between max-w-7xl mx-auto">
         <div className="md:w-[60%]">
           <h1 className="title text-4xl">TESTIMONIALS</h1>
-          <p className="pt-4">{text}</p>
+          <p className="pt-4 text-2xl pr-20">{text}</p>
           <div className="pt-20">
             <h1 className="title text-3xl">{company}</h1>
             <p className="py-2">{name}</p>
