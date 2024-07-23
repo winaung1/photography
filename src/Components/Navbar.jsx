@@ -56,10 +56,10 @@ export const Navbar = () => {
             </a>
           ))}
         </ul>
-        <div className="flex items-center space-x-2 border-b w-fit border-green pb-1">
+        <a href="/contact" className="flex items-center space-x-2 border-b w-fit border-green pb-1">
           <p>LET'S TALK</p>
           <FiArrowUpRight />
-        </div>
+        </a>
       </div>
     </div>
   );

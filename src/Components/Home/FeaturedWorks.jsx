@@ -87,10 +87,10 @@ export const FeaturedWorks = () => {
             />
           ))}
         </div>
-        <div className="flex items-center space-x-2 bg-white text-black px-5 py-2 rounded-full w-fit mx-auto mt-4">
+        <a href="/contact" className="flex items-center space-x-2 bg-white text-black px-5 py-2 rounded-full w-fit mx-auto mt-4">
           <p>Let's Talk</p>
           <FiArrowUpRight />
-        </div>
+        </a>
       </div>
     </div>
   );

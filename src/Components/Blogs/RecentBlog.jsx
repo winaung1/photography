@@ -2,14 +2,56 @@ import React, { useState } from "react";
 import { FiArrowLeft, FiArrowRight, FiChevronsLeft, FiChevronsRight } from "react-icons/fi";
 
 export const RecentBlog = () => {
-  const blogPosts = Array.from({ length: 140 }, (_, index) => ({
-    id: index + 1,
-    title: `Blog Post ${index + 1}`,
-    description:
-      "This is a sample description for the blog post. It provides a brief overview of the blog content.",
-    image:
-      "https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg",
-  }));
+  const blogPosts = [
+    {
+      id: 1,
+      title: "Discover the Magic of the Northern Lights",
+      description:
+        "Experience the awe-inspiring beauty of the Northern Lights. Learn the best places and times to witness this natural phenomenon.",
+      image:
+        "https://images.pexels.com/photos/355465/pexels-photo-355465.jpeg",
+    },
+    {
+      id: 2,
+      title: "A Journey Through Ancient Rome",
+      description:
+        "Step back in time and explore the rich history of Ancient Rome. Visit iconic landmarks and uncover fascinating stories from the past.",
+      image:
+        "https://images.pexels.com/photos/338515/pexels-photo-338515.jpeg",
+    },
+    {
+      id: 3,
+      title: "The Culinary Wonders of Italy",
+      description:
+        "Indulge in the exquisite flavors of Italian cuisine. Discover traditional recipes and culinary secrets passed down through generations.",
+      image:
+        "https://images.pexels.com/photos/1260968/pexels-photo-1260968.jpeg",
+    },
+    {
+      id: 4,
+      title: "Exploring the Amazon Rainforest",
+      description:
+        "Dive into the heart of the Amazon Rainforest. Learn about its diverse ecosystems, unique wildlife, and conservation efforts.",
+      image:
+        "https://images.pexels.com/photos/1577283/pexels-photo-1577283.jpeg",
+    },
+    {
+      id: 5,
+      title: "The Wonders of the Great Barrier Reef",
+      description:
+        "Discover the vibrant underwater world of the Great Barrier Reef. Explore its stunning coral formations and marine life.",
+      image:
+        "https://images.pexels.com/photos/3571576/pexels-photo-3571576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    },
+    {
+      id: 6,
+      title: "Hiking the Rocky Mountains",
+      description:
+        "Embark on an adventurous hike through the Rocky Mountains. Find the best trails, tips for preparation, and breathtaking viewpoints.",
+      image:
+        "https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg",
+    },
+  ];
 
   const [currentPage, setCurrentPage] = useState(1);
   const blogsPerPage = 6;
@@ -26,7 +68,7 @@ export const RecentBlog = () => {
   };
 
   const getPageNumbers = () => {
-    const maxPagesToShow = 2;
+    const maxPagesToShow = 6;
     const pages = [];
     const startPage = Math.max(1, currentPage - Math.floor(maxPagesToShow / 2));
     const endPage = Math.min(totalPages, startPage + maxPagesToShow - 1);
@@ -46,9 +88,7 @@ export const RecentBlog = () => {
     <div className="py-14 px-4 max-w-7xl mx-auto text-center md:text-left">
       <h1 className="title text-4xl">RECENT BLOG</h1>
       <p className="opacity-60 md:w-3/4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, iure
-        sapiente hic nesciunt sed quam possimus ullam delectus architecto atque,
-        eveniet vero dolor voluptatem minus voluptates nihil et omnis debitis.
+        Stay updated with our latest blog posts on travel, food, adventure, and nature. Explore new destinations, learn unique recipes, and find inspiration for your next journey.
       </p>
       <div className="grid md:grid-cols-3 gap-4 pt-4">
         {currentBlogs.map((blogPost) => (
