@@ -13,7 +13,7 @@ export const ContactSection = () => {
       <div className="text-white px-4 max-w-7xl mx-auto text-center md:text-left md:flex md:space-x-4 justify-between">
         <h1 className="title text-4xl green">Contact Us</h1>
         <div className="md:w-[60%]">
-          <p className="opacity-60 pt-4 md:pt-0 text-2xl">
+          <p className="opacity-60 pt-4 md:pt-0 text-xl">
             We would love to hear from you! Whether you have questions, need
             assistance, or want to discuss a potential project, our team is
             here to help. Our commitment is to provide exceptional support and

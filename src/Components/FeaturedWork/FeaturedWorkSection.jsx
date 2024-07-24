@@ -13,7 +13,7 @@ export const FeaturedWorkSection = () => {
       <div className="text-white px-4 max-w-7xl mx-auto text-center md:text-left md:flex md:space-x-4 justify-between">
         <h1 className="title text-4xl green">Featured Works</h1>
         <div className="md:w-[60%]">
-          <p className="opacity-60 pt-4 md:pt-0 text-2xl">
+          <p className="opacity-60 pt-4 md:pt-0 text-xl">
             Discover our curated collection of featured works, showcasing the
             best of our creative and professional endeavors. Each project
             highlights our commitment to excellence and innovation, from

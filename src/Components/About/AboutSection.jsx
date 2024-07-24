@@ -13,7 +13,7 @@ export const AboutSection = () => {
       <div className="text-white px-4 max-w-7xl mx-auto text-center md:text-left md:flex md:space-x-4 justify-between">
         <h1 className="title text-4xl green">About Us</h1>
         <div className="md:w-[60%]">
-          <p className="opacity-60 pt-4 md:pt-0 text-2xl">
+          <p className="opacity-60 pt-4 md:pt-0 text-xl">
             Welcome to our world where creativity meets innovation. At our core,
             we are a team dedicated to pushing boundaries and delivering
             exceptional results. Our journey began with a vision to create

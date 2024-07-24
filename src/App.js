@@ -9,6 +9,7 @@ import { Blog } from './Pages/Blog';
 import {FeaturedWorks} from './Pages/FeaturedWorks'
 import { Projects } from './Pages/Projects';
 import { Contact } from './Pages/Contact';
+import { BlogDetails } from './Components/Blogs/BlogDetails';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path='/about' element={<About/>}/>
         <Route path='/blogs' element={<Blog/>}/>
         <Route path='/contact' element={<Contact/>}/>
+        <Route path='/details/:id' element={<BlogDetails/>}/>
         <Route path='/projects' element={<Projects/>}/>
         <Route path='/featured-works' element={<FeaturedWorks/>}/>
       </Routes>

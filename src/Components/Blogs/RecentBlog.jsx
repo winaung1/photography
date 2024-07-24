@@ -92,7 +92,7 @@ export const RecentBlog = () => {
       </p>
       <div className="grid md:grid-cols-3 gap-4 pt-4">
         {currentBlogs.map((blogPost) => (
-          <div key={blogPost.id} className="">
+          <a href={`/details/${blogPost.id}`} key={blogPost.id} className="">
             <img
               className="w-full h-60 object-cover rounded-xl"
               src={blogPost.image}
@@ -115,7 +115,7 @@ export const RecentBlog = () => {
                 <p className="opacity-60 text-left">Author</p>
               </div>
             </div>
-          </div>
+          </a>
         ))}
       </div>
       <div className="flex justify-center items-center space-x-4 pt-6">
